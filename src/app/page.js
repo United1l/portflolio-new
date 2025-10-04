@@ -1,13 +1,20 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-evenly p-24">
-      <h2>Hi, I'm Michael</h2>
-      <p>Welcome to my portfolio website!</p>
-      <p>I'm a front end developer skilled in HTML, CSS and Js. I've specialised in React
-        for the last 2 years and have built several projects using it. I'm currently learning Nextjs
-        and hope to be proficient in it soon.
-      </p>
-      <div className="h-48 w-48 bg-red-400"></div>
+    <main className="min-h-screen bg-[#14213d]">
+      <header className="w-full h-1/12 flex items-center fixed top-0 text-white">
+        <h1 className="text-3xl font-bold pl-[5%]">
+          Michael
+        </h1>
+        <nav className="ml-auto space-x-10 pr-[10%] text-lg font-medium">
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/services">Services</Link>
+          <Link href="/portfolio">Portfolio</Link>
+          <Link href="/contact">Contact</Link>
+        </nav>
+      </header>
     </main>
   );
 }
