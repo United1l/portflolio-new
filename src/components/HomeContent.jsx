@@ -19,7 +19,9 @@ const HomeContent = () => {
             <div className="w-[175px] h-[50px]">
                 <Link href="/" className="w-[150px] h-full border-2 border-[#00abf0] text-[19px]
                     font-[600] border-solid rounded-lg inline-flex justify-center items-center
-                    bg-[#00abf0] text-[#081b29] hover:bg-transparent hover:text-[#00abf0] transition duration-300">
+                    text-[#457b9d] hover:before:w-full hover:text-[#081b29]
+                    before:content-[''] before:absolute before:w-0 before:h-full before:top-0 before:left-0 
+                    before:z-[-1] relative z-1 before:bg-[#00abf0] before:transition-all before:duration-300">
                     Let's Connect
                 </Link>
             </div>
