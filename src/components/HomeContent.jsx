@@ -19,7 +19,7 @@ const HomeContent = () => {
             <div className="w-[175px] h-[50px]">
                 <Link href="/" className="w-[150px] h-full border-2 border-[#00abf0] text-[19px]
                     font-[600] border-solid rounded-lg inline-flex justify-center items-center
-                    bg-[#00abf0] text-[#081b29] hover:bg-transparent hover:text-[#00abf0]">
+                    bg-[#00abf0] text-[#081b29] hover:bg-transparent hover:text-[#00abf0] transition duration-300">
                     Let's Connect
                 </Link>
             </div>
