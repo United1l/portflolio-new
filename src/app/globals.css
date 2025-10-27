@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+    --animate-showRight : showRight 1s ease forwards;
+
+    @keyframes showRight {
+        100% {
+            width: 0;
+        }
+    }
+}
