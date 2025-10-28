@@ -1,8 +1,22 @@
 import Link from "next/link"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import NavLink from "@/components/NavLink"
+
 
 const HomeContent = () => {
+    const mediaLinks = [
+        { icon: <FontAwesomeIcon icon={faEnvelope} className="w-[20px] h-[20px]" />,
+         href: "/"},
+        { icon: <FontAwesomeIcon icon={faInstagram} className="w-[20px] h-[20px]" />,
+         href: "https://www.instagram.com/"},
+        { icon: <FontAwesomeIcon icon={faXTwitter} className="w-[20px] h-[20px]" />,
+         href: "https://twitter.com/"},
+    ];
+
   return (
-    <section className="h-screen flex items-center px-[10%] text-white">
+    <section className="h-screen flex flex-col justify-center px-[10%] text-white">
         <div className="max-w-[600px]">
             <h1 className="w-fit text-[56px] font-[700] relative before:content-[''] before:absolute
             before:w-full before:h-full before:top-0 before:right-0 before:bg-[#081b29] before:animate-showRight
@@ -31,6 +45,11 @@ const HomeContent = () => {
                     Let's Connect
                 </Link>
             </div>
+        </div>
+        <div className="flex justify-between mt-30 max-w-[250px]">
+            {mediaLinks.map((media, index) => (
+                <NavLink key={index} link={media.icon} href={media.href} />
+            ))}
         </div>
     </section>
   )
