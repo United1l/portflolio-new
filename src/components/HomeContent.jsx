@@ -19,18 +19,18 @@ const HomeContent = () => {
     <section className="h-screen flex flex-col justify-center px-[10%] text-white">
         <div className="max-w-[600px]">
             <h1 className="w-fit text-[56px] font-[700] relative before:content-[''] before:absolute
-            before:w-full before:h-full before:top-0 before:right-0 before:bg-[#081b29] before:animate-showRight
+            before:w-full before:h-full before:top-0 before:right-0 before:bg-[#0e273c] before:animate-showRight
             before:delay-900">
                 Hi, I'm Michael Asare
             </h1>
             <h3 className="w-fit text-[32px] font-[500] text-[#457b9d] relative before:content-[''] before:absolute
-            before:w-full before:h-full before:top-0 before:right-0 before:bg-[#081b29] before:animate-showRight
-            before:delay-[1s, 300ms]">
+            before:w-full before:h-full before:top-0 before:right-0 before:bg-[#0e273c] before:animate-showRight
+            before:delay-[1s,300ms]">
                 A Frontend Developer
             </h3>
             <p className="w-fit text-[16px] my-6 relative before:content-[''] before:absolute
-            before:w-full before:h-full before:top-0 before:right-0 before:bg-[#081b29] before:animate-showRight
-            before:delay-[1s, 600ms]">
+            before:w-full before:h-full before:top-0 before:right-0 before:bg-[#0e273c] before:animate-showRight
+            before:delay-[1s,600ms]">
                 I create responsive and engaging web 
                 applications that provide seamless user experiences.
                 Using the latest technologies and best practices,
