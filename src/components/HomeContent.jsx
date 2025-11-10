@@ -18,16 +18,16 @@ const HomeContent = () => {
     const className= "w-[40px] h-[40px] flex items-center justify-center border-2 border-white hover:border-[#00abf0] rounded-full"
 
   return (
-    <section className="h-screen flex flex-col justify-center px-[10%] text-white">
-        <div className="max-w-[600px]">
-            <h1 className="w-fit text-[56px] font-[700] relative before:content-[''] before:absolute
-            before:w-full before:h-full before:top-0 before:right-0 before:bg-[#14213d] before:animate-showRight
-            before:delay-900">
+    <section className="h-screen w-screen flex items-center justify-between flex-wrap px-[5%] text-white">
+        <div className="max-w-full lg:max-w-[600px] text-center lg:text-left">
+            <h1 className="w-fit text-[32px] lg:text-[56px] font-[700] mt-20 mr-auto lg:mr-0 ml-auto lg:ml-0 
+            relative before:content-[''] before:absolute before:w-full before:h-full before:top-0 before:right-0 before:bg-[#14213d]
+            before:animate-showRight before:delay-900">
                 Hi, I'm Michael Asare
             </h1>
-            <h3 className="w-fit text-[32px] font-[500] text-[#457b9d] relative before:content-[''] before:absolute
-            before:w-full before:h-full before:top-0 before:right-0 before:bg-[#14213d] before:animate-showRight
-            before:delay-[1s,300ms]">
+            <h3 className="w-fit text-[24px] lg:text-[32px] font-[500] text-center text-[#457b9d] mr-auto lg:mr-0 ml-auto lg:ml-0 
+             relative before:content-[''] before:absolute before:w-full before:h-full before:top-0 before:right-0 
+             before:bg-[#14213d] before:animate-showRight before:delay-[1s,300ms]">
                 A Frontend Developer
             </h3>
             <p className="w-fit text-[16px] my-6 relative before:content-[''] before:absolute
@@ -38,7 +38,7 @@ const HomeContent = () => {
                 Using the latest technologies and best practices,
                 I bring your ideas to life on the web.
             </p>
-            <div className="w-[175px] h-[50px]">
+            <div className="w-[175px] h-[50px] mr-auto lg:mr-0 ml-auto lg:ml-0">
                 <Link href="/" className="w-[150px] h-full border-2 border-[#00abf0] text-[19px]
                     font-[600] border-solid rounded-lg inline-flex justify-center items-center
                     text-[#0e273c] hover:before:w-full hover:text-[#457b9d] bg-[#00abf0] overflow-hidden
@@ -47,11 +47,18 @@ const HomeContent = () => {
                     Let's Connect
                 </Link>
             </div>
+            <div className="flex justify-between mt-20 lg:mt-30 max-w-[250px] mr-auto lg:mr-0 ml-auto lg:ml-0">
+                {mediaLinks.map((media, index) => (
+                    <NavLink key={index} link={media.icon} href={media.href} className={className} />
+                ))}
+            </div>
         </div>
-        <div className="flex justify-between mt-30 max-w-[250px]">
-            {mediaLinks.map((media, index) => (
-                <NavLink key={index} link={media.icon} href={media.href} className={className} />
-            ))}
+
+        <div className="w-fit flex justify-center items-center mr-auto lg:mr-0 ml-auto lg:ml-0">
+            <div className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[400px] lg:h-[400px] rounded-full 
+            bg-[#00abf0] animate-bounce">
+
+            </div>
         </div>
     </section>
   )
