@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
@@ -57,7 +58,7 @@ const HomeContent = () => {
         <div className="w-fit flex justify-center items-center mr-auto lg:mr-0 ml-auto lg:ml-0">
             <div className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[400px] lg:h-[400px] rounded-full 
             bg-[#00abf0] animate-bounce">
-
+                <Image src="/profile.png" alt="profile" width={50} height={50} className="w-full h-full object-cover rounded-full" />
             </div>
         </div>
     </section>
