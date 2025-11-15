@@ -9,7 +9,7 @@ const Nav = () => {
     const links = [
         { name: "Home", href: "/" },
         { name: "About", href: "/about" },
-        { name: "Services", href: "/services" },
+        { name: "Skills", href: "/skills" },
         { name: "Portfolio", href: "/portfolio" },
         { name: "Contact", href: "/contact" },
     ];
