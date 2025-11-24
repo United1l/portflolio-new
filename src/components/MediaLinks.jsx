@@ -18,7 +18,7 @@ const MediaLinks = () => {
     const className= "w-[40px] h-[40px] flex items-center justify-center border-2 border-white hover:bg-[#00abf0] hover:border-[#00abf0] hover:text-[#000] rounded-full"
 
   return (
-    <div className="flex justify-between mt-20 lg:mt-30 max-w-[250px] mr-auto lg:mr-0 ml-auto lg:ml-0">
+    <div className="flex justify-between mt-20 lg:mt-30 max-w-[250px] mr-auto ml-auto">
         {mediaLinks.map((media, index) => (
             <NavLink key={index} link={media.icon} href={media.href} className={className} />
         ))}

@@ -17,7 +17,7 @@ const HomeContent = () => {
              before:bg-[#14213d] before:animate-showRight before:delay-[1s,300ms]">
                 A Frontend Developer
             </h3>
-            <p className="w-fit text-[16px] my-6 relative before:content-[''] before:absolute
+            <p className="w-fit text-[16px] text-[#adb5bd] my-6 relative tracking-wide leading-7 before:content-[''] before:absolute
             before:w-full before:h-full before:top-0 before:right-0 before:bg-[#14213d] before:animate-showRight
             before:delay-[1s,600ms]">
                 I create responsive and engaging web 
