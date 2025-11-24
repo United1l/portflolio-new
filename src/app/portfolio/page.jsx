@@ -15,7 +15,7 @@ export default function Portfolio() {
                 Portfolio
             </h1>
             <h3 className="text-[16px] lg:text-[24px] font-[400] mt-4 text-[#457b9d]">
-                Projects that reflect my skills and experience.
+                Projects that reflect my skills and experience:
             </h3>
         </div>
         <div className="h-3/4 w-full flex flex-wrap justify-center items-center">
