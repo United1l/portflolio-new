@@ -26,7 +26,7 @@ const HomeContent = () => {
                 I bring your ideas to life on the web.
             </p>
             <div className="w-[175px] h-[50px] mr-auto lg:mr-0 ml-auto lg:ml-0">
-                <Link href="/" className="w-[150px] h-full border-2 border-[#00abf0] text-[19px]
+                <Link href="/contact" className="w-[150px] h-full border-2 border-[#00abf0] text-[19px]
                     font-[600] border-solid rounded-lg inline-flex justify-center items-center
                     text-[#0e273c] hover:before:w-full hover:text-[#457b9d] bg-[#00abf0] overflow-hidden
                     before:content-[''] before:absolute before:w-0 before:h-full before:top-0 before:left-0 
