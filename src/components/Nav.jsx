@@ -21,7 +21,7 @@ const Nav = () => {
     )
 
   return (
-    <header className="w-full h-1/12 flex items-center fixed top-0 text-white">
+    <header className="w-full h-1/12 flex items-center fixed top-0 text-white z-10">
         <h1 className="w-fit text-3xl font-bold ml-[5%] text-[#00abf0] relative before:content-[''] before:absolute
          before:w-full before:h-full before:top-0 before:right-0 before:bg-[#14213d] before:animate-showRight
          before:delay-400">
@@ -37,7 +37,7 @@ const Nav = () => {
         <FontAwesomeIcon icon={menuState?faClose:faBars} />
       </button>
       <div className={`${menuState? "flex": "hidden"} w-full h-[400px] bg-[#00abf0] absolute top-20 md:hidden flex-col
-      items-center justify-between z-10 py-10`}>
+      items-center justify-between z-9999 py-10`}>
         {links.map((link, index) => (
           <NavLink key={index} link={link.name} href={link.href} />
         ))}

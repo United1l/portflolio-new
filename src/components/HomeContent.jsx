@@ -6,7 +6,7 @@ const HomeContent = () => {
 
   return (
     <section className="h-screen w-screen flex items-center justify-between flex-wrap px-[5%] text-white">
-        <div className="max-w-full lg:max-w-[600px] text-center lg:text-left">
+        <div className="max-w-full lg:max-w-[600px] text-center lg:text-left z-1">
             <h1 className="w-fit text-[32px] lg:text-[56px] font-[700] mt-20 mr-auto lg:mr-0 ml-auto lg:ml-0 
             relative before:content-[''] before:absolute before:w-full before:h-full before:top-0 before:right-0 before:bg-[#14213d]
             before:animate-showRight before:delay-900">
