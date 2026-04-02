@@ -79,7 +79,7 @@ export default function Contact() {
                         name="message"
                         value={form.message}
                         onChange={handleChange}
-                        placeholder="How can I help?"
+                        placeholder="Hi, how can I help?"
                         className="border border-[#00abf0] p-2 rounded w-full h-28"
                         required
                     />
