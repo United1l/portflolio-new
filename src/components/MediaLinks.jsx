@@ -7,7 +7,7 @@ const MediaLinks = () => {
         { icon: <FontAwesomeIcon icon={faInstagram} />,
          href: "https://www.instagram.com/michaelasare._"},
         { icon: <FontAwesomeIcon icon={faXTwitter} />,
-         href: "https://twitter.com/"},
+         href: "https://x.com/michael08618236?s=21"},
         { icon: <FontAwesomeIcon icon={faLinkedinIn} />,
          href: "https://linkedin.com/in/michael-asare-3782a71b3"},
     ];

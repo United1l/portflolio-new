@@ -4,6 +4,9 @@ import Nav from "@/components/Nav";
 export const metadata = {
   title: "Portfolio Website",
   description: "Portfolio website for Michael Asare",
+  icons: {
+    icon: "/logo-image.jpg"
+  },
 };
 
 export default function RootLayout({ children }) {
