@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
+import { usePathname } from 'next/navigation'
 import NavLink from "@/components/NavLink";
 
 const Nav = () => {
@@ -15,10 +16,11 @@ const Nav = () => {
     ];
 
     const [menuState, setMenuState] = useState(false);
+    const pathname = usePathname();
 
     const handleClick = () => (
       setMenuState(prevState => !prevState)
-    )
+    )  
 
   return (
     <header className="w-full h-1/12 flex items-center fixed top-0 text-white z-10">
@@ -29,7 +31,7 @@ const Nav = () => {
         </h1>
         <nav className="ml-auto space-x-10 pr-[10%] text-lg font-medium hidden md:flex">
           {links.map((link, index) => (
-            <NavLink key={index} link={link.name} href={link.href} />
+            <NavLink key={index} link={link.name} href={link.href} className={pathname === link.href ? "text-[#00abf0]" : ""} />
           ))}
         </nav>
         <button className="w-[3rem] flex items-center justify-center p-2 border-2 border-[#C0E6BA]
@@ -39,7 +41,7 @@ const Nav = () => {
       <div className={`${menuState? "flex": "hidden"} w-full h-[400px] bg-[#00abf0] absolute top-20 md:hidden flex-col
       items-center justify-between z-9999 py-10`}>
         {links.map((link, index) => (
-          <NavLink key={index} link={link.name} href={link.href} />
+          <NavLink key={index} link={link.name} href={link.href} className={pathname === link.href ? "text-white" : "text-[#14213d]"} />
         ))}
       </div>
     </header>

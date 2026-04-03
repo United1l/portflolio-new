@@ -17,6 +17,7 @@ export default function Contact() {
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
+        if (status) setStatus("");
     };
 
     const handleSubmit = async (e) => {
@@ -34,6 +35,7 @@ export default function Contact() {
 
             setStatus("Sent 🎉 I'll get back to you soon.");
             setForm({ name: "", email: "", message: "" });
+
         } catch {
             setStatus("Failed to send ❗ Please try again.");
         }
