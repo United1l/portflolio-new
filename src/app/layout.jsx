@@ -2,7 +2,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 
 export const metadata = {
-  title: "Portfolio Website",
+  title: "Michael Asare",
   description: "Portfolio website for Michael Asare",
   icons: {
     icon: "/logo-image.jpg"
