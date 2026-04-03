@@ -7,7 +7,7 @@ export default function About() {
     <main className="min-h-screen bg-[#14213d] px-[5%] flex items-center flex-wrap gap-10 py-20">
         <div className="flex flex-1 justify-center items-center">
             <div className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[400px] lg:h-[500px] bg-[#00abf0]">
-                <Image src="/aiprofile.png" alt="aiprofile" width={0} height={0} className="w-full h-full object-cover" />
+                <Image src="/aiprofile.png" alt="aiprofile" width={0} height={0} className="w-full h-full object-cover" unoptimized={true}/>
             </div>
         </div>
         <div className="flex-2 text-white text-center">

@@ -40,7 +40,7 @@ const HomeContent = () => {
         <div className="w-fit flex justify-center items-center mr-auto lg:mr-0 ml-auto lg:ml-0">
             <div className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[400px] lg:h-[400px] rounded-full 
             bg-[#00abf0] animate-bounce">
-                <Image src="/aiprofile.png" alt="aiprofile" width={50} height={50} className="w-full h-full object-cover rounded-full" />
+                <Image src="/aiprofile.png" alt="aiprofile" width={50} height={50} className="w-full h-full object-cover rounded-full" unoptimized={true}/>
             </div>
         </div>
     </section>
