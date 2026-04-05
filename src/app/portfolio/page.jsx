@@ -9,8 +9,8 @@ export default function Portfolio() {
     ];
 
   return (
-    <main className="min-h-screen bg-[#14213d] px-[5%] flex flex-wrap items-center justify-center py-20 text-white">
-        <div className="h-1/4">
+    <main className="min-h-screen bg-[#14213d] px-[5%] flex flex-col items-center justify-start py-20 text-white">
+        <div className="w-full">
             <h1 className="text-[32px] lg:text-[56px] font-[700]">
                 Portfolio
             </h1>
@@ -18,7 +18,7 @@ export default function Portfolio() {
                 Projects that reflect my skills and experience:
             </h3>
         </div>
-        <div className="h-3/4 w-full flex flex-wrap justify-center items-center">
+        <div className="w-full flex flex-wrap justify-center items-center gap-4">
             {projects.map((project, index) => (
                 <div key={index} className="w-1/2 lg:w-1/3 p-4 flex flex-col items-center">
                     <Link href={project.link} target="_blank" rel="noopener noreferrer">
