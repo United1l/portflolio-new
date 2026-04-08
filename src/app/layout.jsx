@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scrollbar">
+    <html lang="en" className="scrollbar overflow-y-hidden">
       <body>
         <Nav />
         {children}
